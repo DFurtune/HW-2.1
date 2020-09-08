@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table border="1" class="table">
+      <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Телефон</th>
+        <th>E-mail</th>
+      </tr>
+      <tr>
+        <th>Михаил</th>
+        <th>Лазарев</th>
+        <th>21-3-436</th>
+        <th>1234@gmail.com</th>
+      </tr>
+      <tr>
+        <th>Лев</th>
+        <th>Комиссаров</th>
+        <th>51-5-463</th>
+        <th>2134@gmail.com</th>
+      </tr>
+      <tr>
+        <th>Кирилл</th>
+        <th>Ефремов</th>
+        <th>21-8-777</th>
+        <th>4321@gmail.com</th>
+      </tr>
+      <tr>
+        <th>Глеб</th>
+        <th>Жданов</th>
+        <th>50-3-456</th>
+        <th>4123@gmail.com</th>
+      </tr>
+    </table>
+    <hr />
+    <form>
+      <div class="container">
+        <p>Пожалуйста, введите Ваше имя и фамилию</p>
+
+        <label for="name"><b>Имя</b></label>
+        <input type="name" placeholder="Введите имя" name="Имя" required />
+
+        <label for="Surname"><b>Фамилия</b></label>
+        <input
+          type="Surname"
+          placeholder="Введите фамилию"
+          name="Фамилия"
+          required
+        />
+      </div>
+    </form>
+    <hr />
+    <div class="radio">
+      <h3>Какой Ваш пол?</h3>
+      <label>
+        <input type="radio" name="sex" value="мужской" checked />Мужской
+        <div class="radio-control male"></div>
+      </label>
+      <label>
+        <input type="radio" name="sex" value="женский" />Женский
+        <div class="radio-control female"></div>
+      </label>
+    </div>
+    <hr />
+    <div>
+      <form>
+        <p>
+          <textarea
+            placeholder="Введите ваш вопрос"
+            rows="10"
+            cols="45"
+            name="text"
+          ></textarea>
+        </p>
+      </form>
+    </div>
+    <hr />
+    <div>
+      <form>
+        <p>
+          <select>
+            <option selected disabled>Выберите город</option>
+            <option value="Киев">Киев</option>
+            <option value="Львов">Львов</option>
+            <option value="Харьков">Харьков</option>
+            <option value="Одесса">Одесса</option>
+          </select>
+        </p>
+      </form>
+    </div>
+    <hr />
+    <div>
+      <form>
+        <p><b>Выбор языка:</b></p>
+        <input type="checkbox" name="option1" />Українська<br />
+        <input type="checkbox" name="option1" />Русский<br />
+        <input type="checkbox" name="option1" />English<br />
+      </form>
+    </div>
+    <p><input type="submit" value="Отправить" /></p>
+  </body>
+</html>
